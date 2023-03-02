@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+const title2 = 'react eslint waring ttile2 never used?';
 const title = 'React Reactor';
 const welcome = { title: "React", greeting: "Hey..."};
 
