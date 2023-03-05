@@ -66,8 +66,12 @@ function App() {
 
      <hr />
 
-     <h1>List component</h1>
+     <h1>An Instance of List component</h1>
      <List />
+
+     <h1>Another Instance of List component (can be more than once instantiations)</h1>
+     <List />
+
 
       <h1>Search component</h1>
       <Search />
@@ -85,6 +89,7 @@ function Search() {
   )
 }
 
+// List component declaration (once)
 function List() {
   return (
      <ul>
