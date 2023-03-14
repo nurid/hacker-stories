@@ -35,7 +35,7 @@ function App() {
    <div>
      <h1>Hello {title}</h1>
 
-     <label htmlFor="search">Search: </label>
+     <label htmlFor="search">Search (biasa): </label>
      <input id="search" type="text" />
 
      <h1>{welcome.title} {welcome.greeting}</h1>
@@ -79,7 +79,8 @@ function App() {
 
   )
 }
-
+/* change this function into arro funct */
+/*
 function Search() {
   return (
     <div>
@@ -88,7 +89,25 @@ function Search() {
     </div>
   )
 }
+*/
+const Search = () => {
+  const handleChange = (event) => {
+    // synthetic event
+    console.log(event);
+    // value of targetr (here : input HTML element)
+    console.log(event.target.value);
+  };
 
+  return (
+    <div>
+      <label htmlFor="search">Search (dg synthetic event): </label>
+      <input id="search" type="text" onChange={handleChange} />
+
+    </div>
+  )
+
+
+}
 // List component declaration (once)
 function List() {
   return (
